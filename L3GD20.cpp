@@ -66,7 +66,7 @@ void L3GD20::init(void)
 {
     char reg_v;
     
-    m_ptr_I2C->frequency(200000);
+    m_ptr_I2C->frequency(100000);
     
     reg_v = 0;
     if(write_reg(GYR_ADDRESS,L3GD20_LOW_ODR,reg_v) == false)
